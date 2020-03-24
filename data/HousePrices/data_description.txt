@@ -1,5 +1,5 @@
 MSSubClass: Identifies the type of dwelling involved in the sale.	
-
+房屋类型
         20	1-STORY 1946 & NEWER ALL STYLES
         30	1-STORY 1945 & OLDER
         40	1-STORY W/FINISHED ATTIC ALL AGES
@@ -18,7 +18,7 @@ MSSubClass: Identifies the type of dwelling involved in the sale.
        190	2 FAMILY CONVERSION - ALL STYLES AND AGES
 
 MSZoning: Identifies the general zoning classification of the sale.
-		
+所属地段
        A	Agriculture
        C	Commercial
        FV	Floating Village Residential
@@ -29,13 +29,14 @@ MSZoning: Identifies the general zoning classification of the sale.
        RM	Residential Medium Density
 	
 LotFrontage: Linear feet of street connected to property
+到街道到直线距离（单位英尺0.3048m）
 
 LotArea: Lot size in square feet
-
+地块面积（平方英尺0.092903㎡）
 Street: Type of road access to property
-
-       Grvl	Gravel	
-       Pave	Paved
+街道
+       Grvl	Gravel	碎石路
+       Pave	Paved   铺面道路（人行道内种吧）
        	
 Alley: Type of alley access to property
 
@@ -44,42 +45,42 @@ Alley: Type of alley access to property
        NA 	No alley access
 		
 LotShape: General shape of property
-
-       Reg	Regular	
+地块规则程度
+       Reg	Regular
        IR1	Slightly irregular
        IR2	Moderately Irregular
        IR3	Irregular
        
 LandContour: Flatness of the property
-
+平坦度
        Lvl	Near Flat/Level	
        Bnk	Banked - Quick and significant rise from street grade to building
        HLS	Hillside - Significant slope from side to side
        Low	Depression
 		
 Utilities: Type of utilities available
-		
-       AllPub	All public Utilities (E,G,W,& S)	
-       NoSewr	Electricity, Gas, and Water (Septic Tank)
-       NoSeWa	Electricity and Gas Only
-       ELO	Electricity only	
+基础设施
+       AllPub	All public Utilities (E,G,W,& S)	 所有
+       NoSewr	Electricity, Gas, and Water (Septic Tank) 电，气，水，化粪池
+       NoSeWa	Electricity and Gas Only 电，气
+       ELO	Electricity only	电
 	
 LotConfig: Lot configuration
-
-       Inside	Inside lot
-       Corner	Corner lot
-       CulDSac	Cul-de-sac
+地块位置
+       Inside	Inside lot 里面
+       Corner	Corner lot 角落
+       CulDSac	Cul-de-sac 死路
        FR2	Frontage on 2 sides of property
        FR3	Frontage on 3 sides of property
 	
 LandSlope: Slope of property
-		
-       Gtl	Gentle slope
-       Mod	Moderate Slope	
-       Sev	Severe Slope
+地块斜坡
+       Gtl	Gentle slope  还好
+       Mod	Moderate Slope	有点斜
+       Sev	Severe Slope 很斜
 	
 Neighborhood: Physical locations within Ames city limits
-
+物理位置于
        Blmngtn	Bloomington Heights
        Blueste	Bluestem
        BrDale	Briardale
@@ -107,19 +108,19 @@ Neighborhood: Physical locations within Ames city limits
        Veenker	Veenker
 			
 Condition1: Proximity to various conditions
-	
-       Artery	Adjacent to arterial street
-       Feedr	Adjacent to feeder street	
-       Norm	Normal	
-       RRNn	Within 200' of North-South Railroad
-       RRAn	Adjacent to North-South Railroad
-       PosN	Near positive off-site feature--park, greenbelt, etc.
-       PosA	Adjacent to postive off-site feature
-       RRNe	Within 200' of East-West Railroad
-       RRAe	Adjacent to East-West Railroad
+增益条件1
+       Artery	Adjacent to arterial street  干流街道
+       Feedr	Adjacent to feeder street	支流
+       Norm	Normal	一般
+       RRNn	Within 200' of North-South Railroad 南北铁路200m米
+       RRAn	Adjacent to North-South Railroad 南北铁路旁
+       PosN	Near positive off-site feature--park, greenbelt, etc. 主体公园等附近
+       PosA	Adjacent to postive off-site feature  工作场所外
+       RRNe	Within 200' of East-West Railroad 200m东西方走向铁路
+       RRAe	Adjacent to East-West Railroad   东西铁路旁
 	
 Condition2: Proximity to various conditions (if more than one is present)
-		
+增益条件2
        Artery	Adjacent to arterial street
        Feedr	Adjacent to feeder street	
        Norm	Normal	
@@ -131,12 +132,12 @@ Condition2: Proximity to various conditions (if more than one is present)
        RRAe	Adjacent to East-West Railroad
 	
 BldgType: Type of dwelling
-		
-       1Fam	Single-family Detached	
-       2FmCon	Two-family Conversion; originally built as one-family dwelling
-       Duplx	Duplex
-       TwnhsE	Townhouse End Unit
-       TwnhsI	Townhouse Inside Unit
+类型
+       1Fam	Single-family Detached	独栋
+       2FmCon	Two-family Conversion; originally built as one-family dwelling 两家合租
+       Duplx	Duplex 复式
+       TwnhsE	Townhouse End Unit 联排别墅尽头
+       TwnhsI	Townhouse Inside Unit 联排别墅中间
 	
 HouseStyle: Style of dwelling
 	
@@ -150,7 +151,7 @@ HouseStyle: Style of dwelling
        SLvl	Split Level
 	
 OverallQual: Rates the overall material and finish of the house
-
+房屋用料完成度
        10	Very Excellent
        9	Excellent
        8	Very Good
@@ -163,7 +164,7 @@ OverallQual: Rates the overall material and finish of the house
        1	Very Poor
 	
 OverallCond: Rates the overall condition of the house
-
+房屋整体
        10	Very Excellent
        9	Excellent
        8	Very Good
