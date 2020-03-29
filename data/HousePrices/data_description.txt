@@ -20,14 +20,13 @@ MSSubClass: Identifies the type of dwelling involved in the sale.
 MSZoning: Identifies the general zoning classification of the sale.
 所属地段
        A	Agriculture
-       C	Commercial
-       FV	Floating Village Residential
        I	Industrial
-       RH	Residential High Density
+       FV	Floating Village Residential
        RL	Residential Low Density
        RP	Residential Low Density Park 
        RM	Residential Medium Density
-	
+	   RH	Residential High Density
+	   C	Commercial
 LotFrontage: Linear feet of street connected to property
 到街道到直线距离（单位英尺0.3048m）
 
@@ -177,20 +176,22 @@ OverallCond: Rates the overall condition of the house
        1	Very Poor
 		
 YearBuilt: Original construction date
+建造时间
 
 YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+装修时间
 
 RoofStyle: Type of roof
-
+屋顶类型
        Flat	Flat
-       Gable	Gable
+       Gable	Gable  三角形顶棚
        Gambrel	Gabrel (Barn)
-       Hip	Hip
-       Mansard	Mansard
+       Hip	Hip     圆形
+       Mansard	Mansard 复折屋顶
        Shed	Shed
 		
 RoofMatl: Roof material
-
+屋顶材料
        ClyTile	Clay or Tile
        CompShg	Standard (Composite) Shingle
        Membran	Membrane
@@ -201,7 +202,7 @@ RoofMatl: Roof material
        WdShngl	Wood Shingles
 		
 Exterior1st: Exterior covering on house
-
+外墙覆盖材料
        AsbShng	Asbestos Shingles
        AsphShn	Asphalt Shingles
        BrkComm	Brick Common
